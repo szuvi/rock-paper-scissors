@@ -1,5 +1,5 @@
 (function game() {
-  const GAME = {
+  const gameWin = {
     rock: {
       paper: false,
       scissors: true,
@@ -36,8 +36,8 @@
     }
 
     return {
-      result: GAME[playerSelection][computerSelection],
-      message: GAME[playerSelection][computerSelection]
+      result: gameWin[playerSelection][computerSelection],
+      message: gameWin[playerSelection][computerSelection]
         ? `You Win! ${
             playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)
           } beats ${computerSelection}!`
