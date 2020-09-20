@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
-<script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="statistics">
+        <p>Score: <span class="score"></span></p>
+        <p>Round: <span class="round"></span></p>
+      </div>
+      <div class="buttons">
+        <button class="selection" data-value="rock">Rock</button>
+        <button class="selection" data-value="paper">Paper</button>
+        <button class="selection" data-value="scissors">Scissors</button>
+      </div>
+      <div class="message-box">
+        <p class="message"></p>
+      </div>
+    </div>
+    <div class="final-box hidden">
+      <p class="final-message">TEST</p>
+      <button class="final-button">Play Again!</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>

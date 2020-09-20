@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.statistics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.statistics p {
+  margin: 0 1rem;
+}
+
+.score {
+  color: green;
+  font-weight: 700;
+}
+
+.buttons {
+  margin: 1rem 0;
+}
+
+button {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 100px;
+  height: 50px;
+  background: white;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+button:hover {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.message-box {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+.win {
+  color: green;
+}
+
+.loose {
+  color: red;
+}
+
+.final-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.final-box button {
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.final-message {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
